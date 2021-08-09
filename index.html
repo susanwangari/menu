@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+   
+    <body><fieldset style="background-color: rgb(87, 237, 142);"><center><legend><h1>WELCOME TO ARICAN SPICE</h1></legend></fieldset>
+      <html>
+<head>
+<style>
+
+.dropbtn {
+    background-color: #48d1cc;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #7effa5;
+}
+
+#myInput {
+  border-box: box-sizing;
+  background-image:url('search.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px
+    rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover
+{background-color: #ddd}
+
+.show {display:block;}
+
+</style>
+</head>
+<body>
+
+<h2></h2>
+<p></p>
+
+<div class="dropdown">
+
+<button onclick="myFunction()"
+class="dropbtn">Dropmenu</button>
+
+<div id="myDropdown"
+class="dropdown-content">
+
+<input type="text"
+placeholder="Search for your favorite dish here"
+id="myInput"onkeyup="filterFunction()">
+    <a href="#about">About</a>
+    <a href="#base">Base</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="#custom">Custom</a>
+    <a href="#support">Support</a>
+    <a href="#tools">Tools</a>
+  </div>
+
+</div>
+
+<script>
+
+function myFunction() {
+document.getElementById("myDropdown")
+.classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+
+  input = document.getElementById
+  ("myInput");
+
+  filter = input.value.toUpperCase();
+
+  div = document.getElementById
+  ("myDropdown");
+
+  a = div.getElementsByTagName("a");
+
+  for (i = 0; i < a.length; i++) {
+
+  if (a[i].innerHTML.toUpperCase()
+  .indexOf(filter) > -1) {
+
+           a[i].style.display = "";
+        } else {
+          a[i].style.display="none";
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
+
+    <div class="testimonials">
+      <div class="inner">
+        <h1>dinner menu</h1>
+        <div class="border"></div>
+
+        <div class="row">
+          <div class="col">
+            <div class="testimonial">
+              <img src="IMG-20210808-WA0008.jpg" alt="">
+              <div class="name">FRIED NDIZI</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p>
+                Fried ndizi with curry paste poured on top served with greens as an a
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="IMG-20210808-WA0007.jpg" alt="">
+              <div class="name">MUKIMO</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p>
+                A black bean and banana mûkimo served with cabbage and fried beef as stew. 
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="IMG-20210808-WA0006.jpg" alt="">
+              <div class="name">ROASTED </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p>
+                Roasted viazi with french beans and paste to provide a sweet taste to the dish.
+              </p>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
